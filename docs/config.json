@@ -1,0 +1,6 @@
+{
+  "name": "quillstream-e2e-fixture",
+  "purpose": "deployed-environment repository reads for the shared E2E organization",
+  "disposable": true,
+  "entries": ["docs/handbook.md", "docs/config.json", "e2e/README.md"]
+}
