@@ -1,16 +1,1 @@
-# quillstream-e2e-fixture
-
-Throwaway fixture repository for the **quillstream** end-to-end shared organization.
-
-The quillstream E2E organization connects the DEV GitHub App installation (`152682069`,
-account `shiftclaw`) to this repository so that every deployed environment — preview
-included — can serve `/api/repos/tree`, `/api/repos/file` and `/api/repos/commit` against
-a repository that REALLY exists on GitHub.
-
-Before this repository existed, the shared organization pointed at the synthetic
-installation `32000001` that only the locally-mocked transport can serve, so the deployed
-preview answered `404 Not Found` on the token exchange and `503` to the browser
-(shiftclaw/quillstream#232).
-
-**Nothing here is precious.** Content may be rewritten, truncated or committed to by an
-automated test run at any time. Do not store anything you care about.
+quillstream‑e2e‑fixture is a disposable fixture repository for the quillstream end‑to‑end shared organization. The DEV GitHub App (ID 152682069, belonging to the shiftclaw account) is connected to this repository, enabling every deployed environment, including previews, to serve `/api/repos/tree`, `/api/repos/file`, and `/api/repos/commit` against an actual GitHub repository. Earlier the organization relied on the synthetic installation 32000001, which was only handled by the local mock and resulted in 404 token‑exchange failures and 503 responses in previews (see shiftclaw/quillstream#232). The repository holds no lasting data; its contents may be altered, truncated, or overwritten by automated tests at any time, so no valuable information should be stored there.
